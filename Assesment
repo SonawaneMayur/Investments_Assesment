@@ -1,0 +1,40 @@
+Programming Task
+
+We send "trade orders" to brokers regularly and the broker, upon receiving our orders, will execute our orders at the designated stock
+ exchanges.  At each day end, the broker will send 'trade confirms' back to us and let us know which order was executed and by how
+ much.  Trade reconciliation process tries to reconcile the "trade order" file with the "trade confirm" file to check for possible
+ irregularities.  These irregularities include, but not limited to, double execution (an order is executed twice or more), excessive
+ execution (executed more than we ordered), inconsistent trading cost (commission, taxes…), … etc.  Of course, orders can be
+ partially executed during the day.  Although this is considered as an irregularity, portfolio managers typically would like to
+ know how much was left to be executed during the next day.
+
+
+
+Here are the steps for this programming task:
+
+1.      Use pandas to read "trade_orders" and "trade_confirms" files into DataFrames.
+
+2.      Reconcile the "trade order" and "trade confirm" dataframes.
+
+3.      To help a portfolio manager review the trading result, please write three tabs into an XLSX with relevant information:
+
+·         Completed order: orders that are fully executed
+
+·         Partial order: orders that are not fully executed
+
+·         Irregularities: erroneous execution/confirm
+
+
+
+Goal of the Task
+
+Through this exercise, we would like to gauge
+1) your ability to program in Python efficiently,
+2) your programming style,
+3) your problem solving approach,
+4) your familiarity with Object Oriented design, and
+5) your ability to present relevant information for sound business decision making.
+Some portion of the programming task is more or less open-ended.
+Please feel free to make assumption as you see fit or to write a separate document highlighting your thought process
+and why you choose to program in certain way.
+Please follow commonly accepted Python coding style, so your code is readable to others.
